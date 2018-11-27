@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import Button from 'antd/lib/button';
 import './App.css';
+import Header from './Header'
 
-class App extends Component {
+class App extends React.PureComponent {
   render() {
     return (
       <div className="App">
+        <Header />
       </div>
     );
   }
