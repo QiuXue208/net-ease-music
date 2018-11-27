@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Button from 'antd/lib/button';
 import './App.css';
+import { Icon } from 'antd';
+
+const IconFont = Icon.createFromIconfontCN({
+  scriptUrl: '//at.alicdn.com/t/font_937535_g614nosflkn.js',
+});
 
 class App extends Component {
   render() {
@@ -8,18 +14,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
+        <Button type="primary">Button</Button>
+        <div className="icons-list">
+    <IconFont type="icon-wangyiyunyinle" />
+    <IconFont type="icon-wangyiyunyinle" />
+    <IconFont type="icon-wangyiyunyinle" />
+  </div>,
       </div>
     );
   }
