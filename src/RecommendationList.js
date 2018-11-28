@@ -4,7 +4,7 @@ import './App.css'
 class RecommendationList extends React.PureComponent{
     render(){
         return (
-            <section>
+            <section className="recommendation">
                 <h2>推荐歌单</h2>
                 <ul className="recommendationList">
                   <li>

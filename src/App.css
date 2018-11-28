@@ -4,7 +4,13 @@ ul{list-style: none;}
 body{color:#333;}
 section > h2{font-size:17px;position:relative;padding-left:10px;height:20px;line-height:20px;margin-top:18px;}
 section > h2::before{content:'';position:absolute;left:0;top:2px;width:2px;height:17px;background:#D33A31;}
-
+.topBar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:3;
+}
 /* header  */
 header{
   background:#d43c33;
@@ -35,23 +41,24 @@ a:focus{
 }
 
 /*  nav  */
-.nav{
+.navbar > .nav{
+  background:white;
   display:flex;
   justify-content:space-around;
   align-items: center;
   height:41px;
   border-bottom:0.1px solid rgb(185, 185, 185);
 }
-.nav > li{
+.navbar > .nav > li{
   color:#333;
   font-size:15px;
   padding:0 7px;
 }
-.nav > li:nth-child(1){
+.navbar > .nav > li:nth-child(1){
   color:#d33a31;
   position:relative;
 }
-.nav > li:nth-child(1)::after{
+.navbar > .nav > li:nth-child(1)::after{
   content:'';
   position:absolute;
   width:100%;
@@ -61,6 +68,9 @@ a:focus{
 }
 
 /*  recommendationList */
+section.recommendation{
+  margin-top:122px;
+}
 .recommendationList{
   display:flex;
   flex-wrap:wrap;

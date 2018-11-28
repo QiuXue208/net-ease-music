@@ -8,8 +8,10 @@ class App extends React.PureComponent {
   render() {
     return (
       <div className="App">
-        <Header />
-        <Nav />
+        <div className="topBar">
+          <Header />
+          <Nav />
+        </div>
         <RecommendationList />
       </div>
     );
