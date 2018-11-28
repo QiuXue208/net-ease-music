@@ -4,13 +4,12 @@ ul{list-style: none;}
 body{color:#333;}
 section > h2{font-size:17px;position:relative;padding-left:10px;height:20px;line-height:20px;margin-top:18px;}
 section > h2::before{content:'';position:absolute;left:0;top:2px;width:2px;height:17px;background:#D33A31;}
-.topBar{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  z-index:3;
-}
+a{text-decoration: none;}
+.clearfix::after{content:'';display:block;clear:both;}
+
+/*topbar fixed*/
+.topBar{position:fixed;top:0;left:0;width:100vw;z-index:3;}
+
 /* header  */
 header{
   background:#d43c33;
@@ -103,5 +102,58 @@ section.recommendation{
   font-size:13px;
   padding:6px 2px 0 6px;
   line-height:1.2;
+  height:38px;
+}
+
+
+/* hotsong */
+section > h2{
+  margin-bottom:16px;
+}
+.hotsonglist > li{
+  padding-left:10px;
+  position:relative;
+}
+.hotsonglist > li::after{
+  content:'';
+  position:absolute;
+  bottom:3px;
+  left:10px;
+  background:rgb(233, 230, 230);
+  width:365px;
+  height:1px;
+}
+.hotsonglist h3,.hotsonglist p{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow:hidden;
+}
+.hotsonglist > li .paragraph{
+  width:86%;
+  float:left;
+  margin-top:5px;
+}
+.hotsonglist > li .icon{
+  float:right;
+  width:14%;
+}
+.hotsonglist p{
+  color:#888;
+  font-size:12px;
+  margin-top:-8px;
+  position:relative;
+}
+.hotsonglist p > span{
+  margin-left:16px;
+}
+.hotsonglist p > .iconfont{
+  position:absolute;
+  left:0;
+  top:6px;
+}
+.hotsonglist a > .icon{
+  margin-top:15px;
+  color:#888;
+  font-size:25px;
 }
 

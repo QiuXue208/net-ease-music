@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Header from './Header'
 import Nav from  './Nav'
 import RecommendationList from './RecommendationList'
+import HotSong from './HotSong'
 
 class App extends React.PureComponent {
   render() {
@@ -13,6 +14,7 @@ class App extends React.PureComponent {
           <Nav />
         </div>
         <RecommendationList />
+        <HotSong />
       </div>
     );
   }
