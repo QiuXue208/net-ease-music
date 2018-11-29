@@ -4,6 +4,7 @@ import Header from './Header'
 import Nav from  './Nav'
 import RecommendationList from './RecommendationList'
 import HotSong from './HotSong'
+import Footer from './Footer'
 
 class App extends React.PureComponent {
   render() {
@@ -15,6 +16,7 @@ class App extends React.PureComponent {
         </div>
         <RecommendationList />
         <HotSong />
+        <Footer />
       </div>
     );
   }
