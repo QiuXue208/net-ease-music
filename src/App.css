@@ -52,12 +52,12 @@ a:focus{
   color:#333;
   font-size:15px;
   padding:0 7px;
-}
-.navbar > .nav > li:nth-child(1){
-  color:#d33a31;
   position:relative;
 }
-.navbar > .nav > li:nth-child(1)::after{
+.navbar > .nav > li.active{
+  color:#d33a31;
+}
+.navbar > .nav > li.active::after{
   content:'';
   position:absolute;
   width:100%;

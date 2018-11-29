@@ -7,12 +7,16 @@ import HotSong from './HotSong'
 import Footer from './Footer'
 
 class App extends React.PureComponent {
+  handleChangeStyle = (e)=>{
+    console.log(e.target.ParentNode.children)
+     e.target.className='active'
+  }
   render() {
     return (
       <div className="App">
         <div className="topBar">
           <Header />
-          <Nav />
+          <Nav handleChangeStyle={this.handleChangeStyle} />
         </div>
         <RecommendationList />
         <HotSong />
