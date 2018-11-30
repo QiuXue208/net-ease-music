@@ -2,7 +2,7 @@
 /*  公共  */
 ul{list-style: none;}
 body{color:#333;}
-section > h2{font-size:17px;position:relative;padding-left:10px;height:20px;line-height:20px;margin-top:18px;}
+section > h2{font-size:17px;position:relative;padding-left:10px;height:20px;line-height:20px;margin-top:18px;margin-bottom:10px;}
 section > h2::before{content:'';position:absolute;left:0;top:2px;width:2px;height:17px;background:#D33A31;}
 a{text-decoration: none;}
 .clearfix::after{content:'';display:block;clear:both;}
@@ -71,7 +71,7 @@ a:focus{
 
 /*  recommendationList */
 section.recommendation{
-  margin-top:122px;
+  margin-top:123px;
 }
 .recommendationList{
   display:flex;
@@ -108,11 +108,7 @@ section.recommendation{
   height:38px;
 }
 
-
 /* LatestSong */
-section > h2{
-  margin-bottom:16px;
-}
 .latestSongList > li{
   padding-left:10px;
   position:relative;
@@ -160,8 +156,6 @@ section > h2{
   font-size:25px;
 }
 
-
-
 /* footer */
 .footer{
   position:relative;
@@ -207,7 +201,10 @@ section > h2{
 
 /* search */
 form{
-  border-bottom:1px solid grey;
+  position:relative;
+  top:105px;
+  left:0;
+  border-bottom:1px solid rgb(248, 246, 246);
   padding:15px 10px;
 }
 .formContainer{
@@ -244,14 +241,15 @@ form{
   right:7px;
 }
 
-
 /* HotSong */
 .hotSongContainer{
   background: url(//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252…) no-repeat;
   background-size:cover;
   position:relative;
   padding-top:35%;
+  margin-top:102px;
 }
+
 .hotSongContainer > .hotSongIcon{
   background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28…) no-repeat;
   background-size:166px 97px;
@@ -274,6 +272,6 @@ form{
 ul.showList > li.show{
   display:block;
 }
-ul.showList > li.non-show{
+ul.showList > li.nonShow{
   display:none;
 }
