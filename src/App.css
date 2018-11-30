@@ -156,7 +156,7 @@ section > h2{
 }
 .latestSongList a > .icon{
   margin-top:15px;
-  color:#888;
+  color:rgb(212, 211, 211);
   font-size:25px;
 }
 
@@ -164,22 +164,35 @@ section > h2{
 
 /* footer */
 .footer{
+  position:relative;
+}
+.footer::after{
+  content:'';
+  display:block;
+  background: url(//s3.music.126.net/m/s/img/recommand_bg_2x.png?d045faf…) no-repeat;
+  background-size: contain;
+  height:200px;
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+.footer > .box{
   display:flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width:100%;
-  background: url(//s3.music.126.net/m/s/img/recommand_bg_2x.png?d045faf…) no-repeat;
-  background-size:cover;
-  padding-top:66px;
-  margin-top:-16px;
+  position: absolute;
+  top:60px;
+  left:40px;
 }
-.footer > .icon{
+.footer .icon{
   width:230px;
   height:44px;
   margin:0 auto;
 }
-.footer > a{
+.footer a{
   color:#d33a31;
   border:1px solid #d33a31;
   padding:7px 47px;
@@ -187,6 +200,9 @@ section > h2{
   font-size:16px;
   margin-top:15px;
   margin-bottom:5px;
+}
+.footer p{
+  margin-top:-5px;
 }
 
 /* search */
@@ -252,4 +268,12 @@ form{
   left:22px;
   top:95px;
 
+}
+
+/* showList */
+ul.showList > li.show{
+  display:block;
+}
+ul.showList > li.non-show{
+  display:none;
 }
