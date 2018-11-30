@@ -16,11 +16,19 @@ class App extends React.PureComponent {
           <Header />
           <Nav />
         </div>
-        <RecommendationList />
-        <LatestSong />
-        <Footer />
-        <HotSong />
-        <Search />
+        <ul className="showList">
+          <li className="show">
+             <RecommendationList />
+             <LatestSong />
+             <Footer />
+          </li>
+          <li className="non-show">
+             <HotSong />
+          </li>
+          <li className="non-show">
+             <Search />
+          </li>
+        </ul>
       </div>
     );
   }
