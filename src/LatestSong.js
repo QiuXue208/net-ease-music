@@ -2,12 +2,12 @@ import React from 'react'
 import Song from './Song'
 import './App.css'
 
-class HotSong extends React.PureComponent{
+class LatestSong extends React.PureComponent{
     render(){
         return (
             <section>
                <h2>最新音乐</h2>
-               <ul className="hotsonglist">
+               <ul className="latestSongList">
                    <Song />
                    <Song />
                    <Song />
@@ -19,4 +19,4 @@ class HotSong extends React.PureComponent{
     }
 }
 
-export default HotSong
+export default LatestSong

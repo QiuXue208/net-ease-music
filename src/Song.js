@@ -14,7 +14,7 @@ class Song extends React.PureComponent{
                   <div className="paragraph">
                      <h3>梦开始的地方</h3>
                      <p>
-                       <IconFont type='icon-sq' className="iconfont"/>
+                       <IconFont type='icon-sq' className="iconFont"/>
                        <span>朱一龙/吉克隽逸/李菲儿-梦开始的地方</span>
                      </p>
                   </div>

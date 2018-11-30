@@ -109,15 +109,15 @@ section.recommendation{
 }
 
 
-/* hotsong */
+/* LatestSong */
 section > h2{
   margin-bottom:16px;
 }
-.hotsonglist > li{
+.latestSongList > li{
   padding-left:10px;
   position:relative;
 }
-.hotsonglist > li::after{
+.latestSongList > li::after{
   content:'';
   position:absolute;
   bottom:3px;
@@ -126,35 +126,35 @@ section > h2{
   width:365px;
   height:1px;
 }
-.hotsonglist h3,.hotsonglist p{
+.latestSongList h3,.latestSongList p{
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow:hidden;
 }
-.hotsonglist > li .paragraph{
+.latestSongList > li .paragraph{
   width:86%;
   float:left;
   margin-top:5px;
 }
-.hotsonglist > li .icon{
+.latestSongList > li .icon{
   float:right;
   width:14%;
 }
-.hotsonglist p{
+.latestSongList p{
   color:#888;
   font-size:12px;
   margin-top:-8px;
   position:relative;
 }
-.hotsonglist p > span{
+.latestSongList p > span{
   margin-left:16px;
 }
-.hotsonglist p > .iconfont{
+.latestSongList p > .iconFont{
   position:absolute;
   left:0;
   top:6px;
 }
-.hotsonglist a > .icon{
+.latestSongList a > .icon{
   margin-top:15px;
   color:#888;
   font-size:25px;

@@ -3,7 +3,7 @@ import './App.css';
 import Header from './Header'
 import Nav from  './Nav'
 import RecommendationList from './RecommendationList'
-import HotSong from './HotSong'
+import LatestSong from './LatestSong'
 import Footer from './Footer'
 import Search from './Search'
 
@@ -16,7 +16,7 @@ class App extends React.PureComponent {
           <Nav />
         </div>
         <RecommendationList />
-        <HotSong />
+        <LatestSong />
         <Footer />
         <Search />
       </div>
