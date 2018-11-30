@@ -3,13 +3,21 @@ import './App.css'
 
 
 class Nav extends React.Component{
+    constructor(){
+        super()
+        this.state = {
+            currentIndex:0
+        }
+    }
+    handleChangeStyle = (index)=>{
+           this.setState({
+               currentIndex:index
+           })
+    }
     render(){
         const paragraphs = ['推荐音乐','热歌榜','搜索']
         const listItems = paragraphs.map((paragraph,index)=>{
-            if(index === 0){
-                return <li key={index} className="active"  onClick={this.props.handleChangeStyle}>{paragraph}</li>
-            }
-            return <li key={index}  onClick={this.props.handleChangeStyle}>{paragraph}</li> 
+            return <li className={this.state.currentIndex===index?'active':'non-active'} onClick={()=>this.handleChangeStyle(index)}>{paragraph}</li> 
         })
         return (
             <nav className="navbar">
