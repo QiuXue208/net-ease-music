@@ -5,6 +5,7 @@ import Nav from  './Nav'
 import RecommendationList from './RecommendationList'
 import LatestSong from './LatestSong'
 import Footer from './Footer'
+import HotSong from './HotSong'
 import Search from './Search'
 
 class App extends React.PureComponent {
@@ -18,6 +19,7 @@ class App extends React.PureComponent {
         <RecommendationList />
         <LatestSong />
         <Footer />
+        <HotSong />
         <Search />
       </div>
     );

@@ -224,6 +224,32 @@ form{
 }
 .formContainer > .closeIcon{
   position:absolute;
-  top:7px;
+  top:8px;
   right:7px;
+}
+
+
+/* HotSong */
+.hotSongContainer{
+  background: url(//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252…) no-repeat;
+  background-size:cover;
+  position:relative;
+  padding-top:35%;
+}
+.hotSongContainer > .hotSongIcon{
+  background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28…) no-repeat;
+  background-size:166px 97px;
+  background-position:-24px -30px;
+  position:absolute;
+  top:22px;
+  left:22px;
+  width:142px;
+  height:67px;
+}
+.hotSongContainer > .updateDate{
+  color:rgb(245, 236, 236);
+  position:absolute;
+  left:22px;
+  top:95px;
+
 }
