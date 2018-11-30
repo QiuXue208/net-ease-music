@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Header from './Header'
-import Nav from  './Nav'
-import RecommendationList from './RecommendationList'
-import LatestSong from './LatestSong'
-import Footer from './Footer'
-import HotSong from './HotSong'
-import Search from './Search'
+import Header from './components/Header'
+import Nav from  './components/Nav'
+import RecommendationList from './components/RecommendationList'
+import LatestSong from './components/LatestSong'
+import Footer from './components/Footer'
+import HotSong from './components/HotSong'
+import Search from './components/Search'
 
 class App extends React.PureComponent {
   constructor(){

@@ -1,6 +1,6 @@
 import React from 'react'
 import Song from './Song'
-import './App.css'
+import '../App.css'
 
 class LatestSong extends React.PureComponent{
     render(){

@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import '../App.css'
 import Recommendation from './Recommendation'
 
 class RecommendationList extends React.PureComponent{
