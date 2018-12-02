@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/net-ease-music/build/precache-manifest.82e335dbec8f8b02084fadd255a0d0e2.js"
+  "/net-ease-music/build/precache-manifest.dfb3436d28c306e2351394d888b6fe14.js"
 );
 
 workbox.clientsClaim();
